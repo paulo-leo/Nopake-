@@ -1,0 +1,146 @@
+<?php
+
+$modules = get_info_modules();
+
+$menu = array();
+foreach($modules as $module)
+{
+  $name = $module['name'];
+  $icon = $module['icon'];
+  $route = $module['route'];
+  $menu[] = "text=$name|link={$route}|icon={$icon}";
+}
+
+
+?>
+@include('@Painel/Views/template/header',['sidebar'=>$menu])
+
+
+<style>
+  @-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(7px);
+        transform: translateX(7px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-7px);
+        transform: translateX(-7px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+
+  .feature-icon{width:60px;height:50px;border-radius:10px;margin:0 auto;}
+  .feature-icon > .material-icons{font-size:50px;color:#fff;}
+
+  .feature-icon:hover{-webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 3;
+        animation-iteration-count: 3;}
+  </style>
+
+  <div class="container px-4 py-2 np-scroll" id="featured-3">
+      <h3 class="pb-2 border-bottom col-12 text-uppercase">Central de aplicativos {{NP_NAME}}</h3>
+      <div class="row g-3 py-2 row-cols-2 row-cols-lg-4">
+
+	  
+@php
+
+$colors = array(
+'yellow'=>'bg-warning',
+'green'=>'bg-success',
+'blue'=>'bg-info',
+'red'=>'bg-danger',
+'primary'=>'bg-primary',
+'success'=>'bg-success',
+'danger'=>'bg-danger',
+'info'=>'bg-info',
+'warning'=>'bg-warning',
+'secondary'=>'bg-secondary',
+'dark'=>'bg-darkx'
+);
+
+   foreach($modules as $apps)
+   {
+
+    extract($apps);
+	$url = url($route);
+	$description = text_more($description,180);
+	
+	$bg_color = array_key_exists($color,$colors) ? $colors[$color] : 'bg-secondary';
+	
+  $html = "<div class='feature col text-center'>
+    <a href='{$url}' class='text-justify'>
+    <div class='feature-icon shadow-lg {$bg_color} bg-gradient'>
+       <i class='material-icons'>{$icon}</i>
+    </div>
+	</a>
+    <h4>{$name}</h4>
+    <p class='text-justify'>{$description}</p>
+  </div>";
+  
+  hello($html);
+  
+  }
+
+   @endphp
+      </div>
+    </div>
+
+
+@include('@Painel/Views/footer')

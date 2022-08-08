@@ -1,0 +1,38 @@
+{
+    "admin": {
+        "name": "Administrador",
+        "description": "Essa funx27xx17xo de usux16xrio tem todos os acessos permitidos de forma irrestrita no sistema.",
+        "sub": "",
+        "status": "active"
+    },
+    "edit": {
+        "name": "Editor",
+        "description": "Essa funx27xx17xo permiti publicar e gerenciar posts e px16xginas, bem como gerenciar posts de outros usux16xrios, etc.",
+        "sub": "",
+        "status": "active"
+    },
+    "author": {
+        "name": "Autor",
+        "description": "Algux19xm que possa publicar e gerenciar seus prx22xprios posts.",
+        "sub": "",
+        "status": "active"
+    },
+    "collaborator": {
+        "name": "Colaborador",
+        "description": "Algux19xm que pode escrever e gerenciar suas posts, mas nx17xo publicx16x-las.",
+        "sub": "",
+        "status": "active"
+    },
+    "subscriber": {
+        "name": "Assinante",
+        "description": "Algux19xm que sx22x pode gerir seu prx22xprio perfil.",
+        "sub": "",
+        "status": "active"
+    },
+    "diaria": {
+        "name": "Diária",
+        "description": "Pessoa responsável pelo lançamento das diárias",
+        "sub": "",
+        "status": "active"
+    }
+}

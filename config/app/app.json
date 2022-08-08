@@ -1,0 +1,21 @@
+{
+    "name": "Nopake MF",
+    "description": "Um Microframework PHP rápido e progressivo.",
+    "url": "https://nopake.gitbook.io/api-docs/",
+    "author": "Paulo Leonardo",
+    "status": "test",
+    "mode": "dev",
+    "version": "0.0.1",
+    "logs": "off",
+    "timezone": "America/Sao_Paulo",
+    "lang": "pt-br",
+    "charset": "utf-8",
+    "max_execution": 0,
+    "new_members": "off",
+    "accept_terms": "off",
+    "strong_password": "off",
+    "member_privacy": "public",
+    "new_member_default": "subscriber",
+    "key_api": "956d20b91d660623c1b5c010b05fbb2f",
+    "active_api": "on"
+}

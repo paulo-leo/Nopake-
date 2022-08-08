@@ -1,0 +1,50 @@
+{
+    "Painel": {
+        "name": "Painel de Controle",
+        "description": "Painel de Controle ou simplesmente painel, x19x um mx22xdio nativo do Onpaulo. Esse mx22xdulo permiti gerenciar usux16xrios e sessx23xes, alx19xm de poder gerenciar outros mx22xdulos de forma intuitiva e simples. ",
+        "author": "Paulo Leonardo",
+        "status": "active",
+        "version": "0.1",
+        "license": "MIT",
+        "require": [
+            "php7"
+        ],
+        "url": "www.onpaulo.com.br",
+        "route": "",
+        "parent": "",
+        "color": "",
+        "icon": ""
+    },
+    "FileManager": {
+        "name": "Gerenciador de arquivos",
+        "description": "Aplicativo para gerenciamento de arquivos.",
+        "author": "Paulo Leonardo | Onpaulo",
+        "status": "active",
+        "version": "0.1",
+        "license": "MIT",
+        "require": [
+            "php7"
+        ],
+        "url": "www.onpaulo.com.br",
+        "route": "filemanager",
+        "parent": "",
+        "color": "info",
+        "icon": "folder"
+    },
+    "Hub": {
+        "name": "Hub",
+        "description": "Gerenciador de pacotes e atualizax27xx23xes do kernel do framework",
+        "author": "Paulo Leonardo",
+        "status": "active",
+        "version": "0.1",
+        "license": "MIT",
+        "require": [
+            "php7"
+        ],
+        "url": "-----------",
+        "route": "hub",
+        "parent": "",
+        "color": "primary",
+        "icon": "hub"
+    }
+}

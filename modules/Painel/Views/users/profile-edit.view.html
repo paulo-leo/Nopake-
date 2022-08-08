@@ -1,0 +1,40 @@
+@include('@Painel/Views/template/header',['sidebar'=>$menu])
+
+@component('p_header_form',[
+   'title'=>'Atualizar perfil',
+   'url'=>'profile/update'
+]) 
+
+@component('p_csrf') 
+@component('p_hidden',['id'=>$find->id]) 
+
+        <div class="row  px-4">
+            <div class="breadcrumbs-inline pt-3 pb-1" id="breadcrumbs-wrapper">
+			
+			
+			<div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="text" disabled class="form-control-plaintext" id="staticEmail" value="{{$find->email}}">
+    </div>
+  </div>
+  <div class="mb-3 row">
+    <label  class="col-sm-2 col-form-label">Nome completo</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="name" value="{{$find->name}}">
+    </div>
+  </div>
+  
+   <div class="mb-3 row">
+    <label  class="col-sm-2 col-form-label">Biografia</label>
+    <div class="col-sm-10">
+      <input type="text" name="autobiography" class="form-control" value="{{$find->autobiography}}">
+    </div>
+  </div>
+			
+		@component('p_form_close')	
+			
+			</div>
+        </div>
+ 
+@painel_footer()

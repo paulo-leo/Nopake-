@@ -1,0 +1,12 @@
+{
+  "name": "Hub",
+  "description": "Gerenciador de pacotes e atualizações do kernel do framework",
+  "version": "0.1",
+  "author": "Paulo Leonardo",
+  "license": "MIT",
+  "require": ["php7"],
+  "url": "-----------",
+  "icon": "hub",
+  "color": "primary",
+  "route": "hub"
+}
